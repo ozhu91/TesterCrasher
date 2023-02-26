@@ -1,9 +1,9 @@
 
-#APIs 
+# APIs 
 ***
-####AUTH 
+#### AUTH 
 
-######Login app
+###### Login app
 > POST api/v1/auth/login
 
 Request
@@ -22,8 +22,8 @@ success: Boolean
 }
 
 ***
-####CLIENTS
-######Get clients
+#### CLIENTS
+###### Get clients
 >GET api/v1/clients/?limit=10
 
 Request
@@ -43,7 +43,7 @@ Response
 ]
 
 
-######Add client
+###### Add client
 >POST api/v1/clients/create
 
 Request
@@ -63,7 +63,7 @@ Response
 	success: Boolean
 }
 
-######Delete client
+###### Delete client
 DEL api/v1/clients/?id=Integer
 
 Request
@@ -75,7 +75,7 @@ Response
 	success: Boolean
 }
 
-######Change client
+###### Change client
 POST api/v1/clients/update/?id=Integer
 Request
 {
@@ -102,8 +102,8 @@ Response (if did't change)
 >Status code: 204
 
 ***
-####Groups
-######Get groups
+#### Groups
+###### Get groups
 GET api/v1/groups/?limit=15
 
 Request
@@ -119,7 +119,7 @@ Response
 ]
 
 
-######Add group
+###### Add group
 POST api/v1/groups/create
 
 Request
@@ -134,7 +134,7 @@ Response
 	success: Boolean
 }
 
-######Delete group
+###### Delete group
 DEL api/v1/groups/?id=Integer
 
 Request
@@ -146,7 +146,7 @@ Response
 	success: Boolean
 }
 
-######Change group
+###### Change group
 > POST api/v1/groups/update/?id=Integer
 Request
 >Status code: 200
@@ -166,8 +166,8 @@ Response (if did't change)
 >Status code: 204
 
 ***
-####Employees
-######Get employees
+#### Employees
+###### Get employees
 > GET api/v1/employees/?limit=10
 
 Response 
@@ -182,7 +182,7 @@ Response
 ]
 
 
-######Add employee
+###### Add employee
 > POST api/v1/employees/create
 
 Request
@@ -199,7 +199,7 @@ Response
 	success: Boolean
 }
 
-######Delete employee
+###### Delete employee
 >DEL api/v1/employees/?id=Integer
 
 Response 
@@ -209,7 +209,7 @@ Response
 	success: Boolean
 }
 
-######Change employee
+###### Change employee
 POST api/v1/employees/update/?id=Integer
 Request
 >{
