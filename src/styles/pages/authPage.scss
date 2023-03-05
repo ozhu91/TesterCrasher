@@ -1,0 +1,31 @@
+@import "../components/authForm.scss";
+
+.authPage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    &__header {
+        width: 100%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 96px;
+        line-height: 117px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: -0.035em;
+        padding: 0;
+        
+        &_marginBottom {
+            margin-bottom: 68px;
+        }
+    }
+
+
+
+}
+

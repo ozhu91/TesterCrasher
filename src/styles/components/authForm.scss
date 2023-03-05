@@ -1,0 +1,118 @@
+.authForm {
+    min-height: 400px;
+    max-height: 400px;
+    max-width: 480px;
+    background-color: #ECEEF3;
+
+    &_pad {
+        padding: 60px 47px;
+        box-sizing: border-box;
+    }
+
+    &__input {
+        margin: 0 0 14px 0;
+
+        &::placeholder {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+
+            letter-spacing: -0.035em;
+
+            color: #979797;
+        }
+    }
+
+        .outline-secondary {
+            background-color: #fff;
+
+            :hover {
+                background-color: #fff;
+            }
+
+            :active {
+                background-color: #fff;
+            }
+        }
+
+    &__inputImage {
+        background-color: #fff;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+
+
+        &:hover  {
+            background-color: #fff;
+            color: #979797;
+        }
+
+        &:focus {
+            background-color: #ffffff;
+            color: #979797!important;
+        }
+
+        &:active {
+            background-color: #ffffff!important;
+            color: #979797!important;
+        }
+
+
+        
+    }
+
+    &__buttonLogin {
+        margin-top: 18px;
+
+        &_disabled {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+
+            letter-spacing: -0.035em;
+            background-color: #F2F5F9!important;
+            color: #D2D5DA!important;
+        }
+    }
+
+    &__recoveryText {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 23px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        letter-spacing: -0.045em;
+        color: #979797;
+
+        & a {
+            text-decoration: none;
+
+            color: black;
+
+            &:hover {
+                color: #979797;
+            }
+
+            &:active {
+                color: #979797;
+            }
+
+            &:focus {
+                color: black;
+            }
+        }
+    }
+    
+
+ 
+}
+
