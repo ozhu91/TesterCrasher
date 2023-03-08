@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+
+/*
+    -- PAGE STYLES --
+*/  
+
+@import "./pages/authPage.scss";
+
+@import "./pages/homePage.scss";
+
+/*
+-- Components -- 
+*/
+
+@import "./components/topNavbar.scss";

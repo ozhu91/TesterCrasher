@@ -1,0 +1,138 @@
+.topNavbar {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 124px;
+    width: 100%;
+    min-width: 100%;
+    padding: 42px 120px;
+    box-sizing: border-box;
+
+    header {
+        min-width: 281px;
+        max-width: 30%;
+        height: 39px;
+        left: 120px;
+        top: 42px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        /* identical to box height */
+        letter-spacing: -0.035em;
+        color: #000000;
+    }
+
+    .toolBar {
+
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 70%;
+        width: 100%;
+
+        div:not(:first-of-type) {
+            margin-left: 30px;    
+        }
+
+        &__personal, &__geo {
+            min-width: none;
+            max-width: none;
+        }
+    
+
+        .personal {
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-end;
+            align-items: center;
+
+            span {
+                display: inline-block;
+                line-height: 23px;
+            }
+
+            span:not(:first-of-type) {
+                margin-left: 10px;
+            }
+
+
+            &__icon {
+                width: 23px;
+                height: 23px;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            &__name {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+                letter-spacing: -0.035em;
+                border-right: 2px solid black;
+                padding-right: 10px;
+                box-sizing: border-box;
+            }
+
+            &__logout {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+                letter-spacing: -0.035em;
+                color: #D9D9D9;
+
+                &:hover {
+                    color: #000000;
+                    cursor: pointer;
+                }
+                &:focus {
+                    color: #00000083;
+                }
+                &:active {
+                    color: #00000042;
+                }
+            }
+        }
+
+        .geo {
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-end;
+            align-items: center;
+
+            span {
+                display: inline-block;
+                line-height: 23px;
+            }
+
+            span:not(:first-of-type) {
+                margin-left: 10px;
+            }
+
+            &__name {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+                letter-spacing: -0.035em;
+            }
+
+            &__menu {
+                height: 23px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    
+}
