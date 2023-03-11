@@ -8,8 +8,15 @@
 
 @import "./pages/homePage.scss";
 
+@import './pages/employeesPage.scss';   
+
+@import './pages/clientsPage.scss';
+
+@import './pages/groupsPage.scss';
+
 /*
 -- Components -- 
 */
 
 @import "./components/topNavbar.scss";
+@import './components/TabelsNav.scss';

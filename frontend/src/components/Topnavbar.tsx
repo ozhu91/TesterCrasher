@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavDropdown } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { getLogout } from '../store/reducers/usersActions'
 import { useAppDispatch, useAppSelector } from '../store/redux-hooks'
 
@@ -24,7 +25,7 @@ const TopNavbar = () => {
 
     return (
         <div className='topNavbar'>
-            <header>Address BookApp</header>
+            <Link to="/" className='topNavbar__mainLink'>Address BookApp</Link>
             {false ? <><span>Name: {name}</span>
             <span>Access: {access}</span></> : null}
             <div className="toolBar">
