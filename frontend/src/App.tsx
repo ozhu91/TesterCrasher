@@ -22,7 +22,7 @@ function App() {
     },
     {
       path: "clients",
-      element: <EmployeesPage />,
+      element: <ClientsPage/>,
     },
     {
       path: "groups",
@@ -30,7 +30,7 @@ function App() {
     },
     {
       path: "employees",
-      element: <ClientsPage />,
+      element: <EmployeesPage />,
     },
   ]);
 
