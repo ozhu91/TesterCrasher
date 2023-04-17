@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'  
 import { useNavigate } from 'react-router'
-import Pagination from '../../components/Pagination'
+import DataActionNav from '../../components/DataActionNav/DataActionNav'
 import TabelsNav from '../../components/TabelsNav'
 import TopNavbar from '../../components/Topnavbar'
 import { useAppSelector } from '../../store/redux-hooks'
-import ClientsList from './ClientsList'
+import ClientsTable from './ClientsTabel'
 
 
 const ClientsPage = () => { 
@@ -16,19 +16,14 @@ const ClientsPage = () => {
             navigate("/auth")
         }
     }, [access, navigate])
+
     return (
         <div className='clientsPage'>
             <TopNavbar/>
             <TabelsNav/>
             <div className="clientsPage__content">
-                <button className="clientsPage__buttonAdd buttonAdd">
-                    Добавить 
-                    <span className="material-icons buttonAdd__icon">
-                        add_circle_outline
-                    </span>
-                </button>
-                <ClientsList />
-                <Pagination />
+                <DataActionNav button_add={true}/>
+                <ClientsTable />
             </div>
         </div>
     )

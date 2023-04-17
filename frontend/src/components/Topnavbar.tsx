@@ -6,12 +6,9 @@ import { useAppDispatch, useAppSelector } from '../store/redux-hooks'
 
 
 const TopNavbar = () => {
-
     const name = useAppSelector(state => state.users.name)
     const access = useAppSelector(state => state.users.access) 
     const dispatch = useAppDispatch();
-
-
     const [languages] = useState<Array<string>>(["RUS", "ENG", "DET", "ITA"])
     const [selectLanguage, setSelectLanguage] = useState(languages[0])
 
